@@ -144,3 +144,16 @@ function getTop5(type) {
         console.error('Error:', error);
     });
 }
+
+document.querySelector('.logout-button').addEventListener('click', logout);
+
+function logout() {
+    localStorage.removeItem("tokens");
+    localStorage.removeItem("user");
+    localStorage.removeItem("artists");
+    localStorage.removeItem("tracks");
+    console.log("Logged out successfully");
+    
+    window.location.href = redirect_uri;
+}
+
