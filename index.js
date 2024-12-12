@@ -10,6 +10,8 @@ document.querySelector('.login-button').addEventListener('click', function () {
         requestAuthorization();
 });
 
+// this is just a comment
+
 window.addEventListener('load', function () {
     onPageLoad();
 });
